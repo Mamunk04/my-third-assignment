@@ -3,21 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>A 03-002</title>
+    <!-- FOnt Family -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- font Awesome -->
+    <script src="https://kit.fontawesome.com/ffe47ed191.js" crossorigin="anonymous"></script>
+    <!-- Tailwind cdn -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <title></title>
+    <style type="text/tailwindcss">
+       @theme {
+  --font-sora: "Sora", "serif"; 
+}
+      </style>
 </head>
-<body>
+<body class="font-sora">
     <!-- Header Section -->
-    <header>
+    <header class="bg-gradient-to-t from-gray-200 to-gray-0">
+        <!-- Nav Section -->
+       <div class="flex justify-between lg:max-w-7xl m-auto items-center p-4">
+        <div>
+            <img src="images/logo-header.png" alt="Logo Header">
+           </div>
+           <div class="md:grid hidden">
+            <nav>
+                <ul class="list-none flex gap-3">
+                    <li><a class="hover:border-b-2 border-green-600" href="">Product</a></li>
+                <li><a a class="hover:border-b-2 border-green-600" href="">Service</a></li>
+                <li><a a class="hover:border-b-2 border-green-600" href="">Contact Us</a></li>
+                </ul>
+            </nav>
+           </div>
+           <div class="md:flex gap-3 items-center hidden">
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            <button class="border-green-700 border-1 hover:bg-green-600 cursor-pointer px-8 py-3 rounded-lg hover:text-white font-semibold"
+            >Login</button>
+            <button class="border-green-700 border-1 bg-green-600 cursor-pointer px-8 py-3 rounded-lg text-white font-semibold hover:text-gray-200"
+            >Register</button>
+    
+          </div>
 
+          <div class="md:hidden text-3xl text-green-600">
+            <a href=""><i class="fa-solid fa-bars"></i></a>
+          </div>
+       </div>
+       <!-- Banner section -->
+        <div class="flex flex-col justify-center items-center  ">
+            <h1 class="text-center text-5xl font-bold pt-5">Freshness <span class="text-green-600">You Can <br> Count</span> 
+                 On, Prices You’ll Love!</h1>
+                <p class="text-center pb-3 text-sxl">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples, we’ve got you covered every day!</p>
+                <div>
+                    <img class="md:w-3/6 m-auto p-0 my0" src="images/hero-vegetables.png" alt="">
+                </div>
+        </div>
     </header>
     <!-- Main Section -->
     <main>
+        <!-- Services Section -->
+         <section class="w-9/10 m-auto py-20">
+            <h1 class="py-7 font-semibold text-green-600 text-2xl">Services</h1>
+            <div class="flex flex-col md:flex-row gap-5">
+                <!-- Card 1 -->
+                <div class="flex flex-col text-center items-center justify-center  bg-gray-200 rounded-lg p-8">
+                    <div class="bg-white rounded-full  border-none" >
+                        <img class="p-4" src="images/service.png" alt="">
+                    </div>
+                    <h1 class="text-sxl font-semibold py-2">24/7 Services  </h1>
+                    <p>we are here for you 24/7. Emergencies don't wait, and neither do we. Enjoy convenience and reliability around the clock. Your needs are our priority.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="flex flex-col text-center items-center justify-center  bg-gray-200 rounded-lg p-8">
+                    <div class="bg-white rounded-full  border-none" >
+                        <img  class="p-4" src="images/delivery.png" alt="">
+                    </div>
+                    <h1 class="text-sxl font-semibold py-2">Fast Delivery</h1>
+                    <p>Enjoy the convenience of having items delivered to your door within hours, saving you time and effort. Experience hassle-free, prompt service every time</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="flex flex-col text-center items-center justify-center  bg-gray-200 rounded-lg p-8">
+                    <div class="bg-white rounded-full  border-none" >
+                        <img class="p-4" src="images/healthy.png" alt="">
+                    </div>
+                    <h1 class="text-sxl font-semibold py-2">Healthy Products </h1>
+                    <p>Organic produce ensures you're consuming foods free from synthetic pesticides. Whole grains such as brown rice and oatmeal are high in fiber, promoting digestive health..</p>
+                </div>
+            </div>
+         </section>
 
+         <!-- Popular Products -->
+        <section class="bg-gradient-to-br from-gray-200 to-gray-50 py-15">
+            <div class="w-9/10 m-auto">
+                <h1 class="text-2xl text-green-600 font-semibold pb-15">Popular Products</h1>
+                <div class="grid grid-cols-3">
+                    <!-- Discount Card -->
+                    <div class="col-span-1 w-full">
+                       <div class=" relative h-100 w-full bg-red-500 overflow-hidden bg-gradient-to-br from-green-600 to-green-300 rounded-lg">
+                       <div class="p-10">
+                        <h1 class="text-2xl text-white font-semibold mt-5 "
+                        >30% off</h1>
+                        <p class="text-xl mt-5 text-yellow-950">Discover a world of thetas toys, and <br> essential handpicked for</p>
+                        <button class="px-4 py-2 bg-white text-black rounded-lg text-xl mt-5 hover:text-white hover:bg-black cursor-pointer"
+                        >Buy Now</button>
+                       </div>
+                       <div>
+                        <img class="absolute bottom-0 right-0 w-1/2" src="images/vegetable-offer.png" alt="">
+                       </div>
+                             
+                             
+                       </div>
+                    </div>
+                    <!-- Discount Card end -->
+                    <div class="col-span-2">
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </main>
     <!-- Footer Section -->
     <footer>
-
+        <div class="h-150 bg-black"></div>
     </footer>
 </body>
 </html>
